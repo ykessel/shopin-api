@@ -1,0 +1,10 @@
+																												NOMBRE character varying NOT NULL)
+CREATE TABLE PUBLIC.PRODUCTOS ( 
+    ID UUID NOT NULL UUID_GENERATE_V4(),																								NOMBRE character varying NOT NULL,
+	PRECIO integer NOT NULL,															
+	CATEGORIA character varying, 
+	CREADO TIMESTAMP WITHOUT TIME ZONE,
+	DESCRIPCION character varying,
+	COVER character varying,
+	PUBLICADO boolean
+)
