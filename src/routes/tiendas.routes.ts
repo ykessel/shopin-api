@@ -6,8 +6,9 @@ export const tiendasRouter = Router();
 
 // Crear la tienda
 tiendasRouter.post("/tiendas", async (req: Request, res: Response) => {
-  const { propietario, email, password, tienda }: Tienda = req.body;
+  const { propietario, email, password, tienda }: Tienda = req.body;  
 
+ // Incio de la transaccion
   (async () => {
     const client = await pool.connect();
 
